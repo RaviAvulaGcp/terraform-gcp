@@ -5,7 +5,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket = "tfstate-gcp-bucket"
+    bucket = "tfstate-gcp-bucket-ravi"
     prefix = "terraform/state"
     #impersonate_service_account = "mytestsa@my-test-gcp-5308.iam.gserviceaccount.com"
   }
