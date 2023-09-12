@@ -17,3 +17,17 @@ resource "google_storage_bucket" "bucket" {
   name     = "test-bucket-random-001122-22"
   location = "europe-west2"
 }
+
+# resource "google_storage_bucket" "default" {
+#   name          = "Tes-gcp_bucket"
+#   force_destroy = "true"
+#   location      = "europe-west2"
+#   project       = "${length(var.project_id) > 0 ? var.project_id : "my-test-gcp-5308"}"
+#   storage_class = default
+
+#   versioning {
+#     enabled = true
+#   }
+
+#   labels = "test gcp bucket"
+# }
