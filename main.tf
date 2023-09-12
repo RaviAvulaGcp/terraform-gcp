@@ -9,12 +9,12 @@ resource "google_compute_instance" "terraform" {
 }
 
 resource "google_storage_bucket" "gcs_bucket" {
-  name     = "test-gcp-bucket"
+  name     = "test-gcp-bucket-rk"
   location = "europe-west2"
 }
 
 resource "google_storage_bucket" "bucket" {
-  name     = "test-bucket-random-001122-22"
+  name     = "test-bucket-random-120923-23"
   location = "europe-west2"
 }
 
