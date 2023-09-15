@@ -9,5 +9,5 @@ variable "region" {
 }
 variable "gcp_zone" {
   type    = string
-  default = "europe-west2"
+  default = "europe-west2-b"
 }
