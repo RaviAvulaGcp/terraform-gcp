@@ -66,7 +66,8 @@ resource "google_compute_instance" "vm_instance_public" {
 
   boot_disk {
     initialize_params {
-      image = "windows-cloud/windows-2019"
+      #image = "windows-cloud/windows-2019"
+      image = "debian-cloud/debian-11"
     }
   }
 
