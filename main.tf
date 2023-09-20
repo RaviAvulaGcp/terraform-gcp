@@ -54,7 +54,7 @@ resource "google_compute_subnetwork" "network_subnet" {
   name          = "${lower(var.company)}-${lower(var.app_name)}-${var.environment}-subnet"
   ip_cidr_range = var.network-subnet-cidr
   network       = google_compute_network.vpc.name
-  region        = var.gcp_region
+  region        = var.region
 }
 # Create VM
 resource "google_compute_instance" "vm_instance_public" {
