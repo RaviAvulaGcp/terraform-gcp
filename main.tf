@@ -77,3 +77,7 @@ resource "google_compute_instance" "vm_instance_public" {
     access_config { }
   }
 } 
+
+output "my_output"{
+  value=google_compute_network.vpc.id
+}
